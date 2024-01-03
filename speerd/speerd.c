@@ -1,4 +1,4 @@
-// speerd.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// this version works with gcc
 //
 
 #include <stdio.h>
@@ -9,7 +9,7 @@
 
 int main()
 {
-    char response;
+    char response; // not called in this version
     const int bufferSize = 104857600; // 100 MB
     char* buffer;
     clock_t start, end;
