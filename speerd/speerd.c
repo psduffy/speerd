@@ -30,7 +30,7 @@ int main()
 
     cpu_time_used = ((double)(end - start)) / CLOCKS_PER_SEC;
     printf("Write time: %f seconds\n", cpu_time_used);
-    printf("Write speed: %f MB/s\n", bufferSize / (cpu_time_used * 104857600));
+    printf("Write speed: %f MB/s\n", bufferSize / (cpu_time_used * 1048576));
 
     // Simulate reading from mem
 
@@ -44,7 +44,7 @@ int main()
 
     cpu_time_used = ((double)(end - start)) / CLOCKS_PER_SEC;
     printf("Read time: %f seconds\n", cpu_time_used);
-    printf("Read speed: %f MB/s\n", bufferSize / (cpu_time_used * 104857600));
+    printf("Read speed: %f MB/s\n", bufferSize / (cpu_time_used * 1048576));
 
     free(buffer);
     return 0;
